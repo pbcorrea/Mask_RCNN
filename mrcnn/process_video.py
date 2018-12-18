@@ -21,7 +21,7 @@ while(capture.isOpened()):
           frame, r['rois'],r['masks'],r['class_ids'], class_names, r['scores']
         )
         output.write(frame)
-        cv2.imshow('frame',frame)
+        #cv2.imshow('frame',frame) Uncomment to display video 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
     else:
